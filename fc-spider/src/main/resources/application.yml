@@ -63,11 +63,9 @@ spring:
       shutdown-timeout: 100
     timeout: 5000
 
-mybatis-plus:
-  # xml
-  mapper-locations: classpath*:mapping/*.xml  #classpath* scanning multiple jar
+mybatis:
   # 实体扫描，多个package用逗号或者分号分隔
-  type-aliases-package: com.abbkit.face
+  type-aliases-package: com.abbkit.tmp
   configuration:
     # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
